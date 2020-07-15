@@ -3,7 +3,10 @@ var generateBtn = document.querySelector("#generate");
 
 // Declaring Variables
 // Special characters
-var specialCharacters = ['!', '@', '#', '$', '%', '&', '*', '(', ')', '+', '-', '/', ':', ';', '<', '=', '>', '?', '[', '/', ']', '^', '_', '`', '{', '}', '|', '~'];
+var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+var numbers = "0123456789"
+var specialCharacters = "!#$%&()*+,-./:;<=>?@[]^_{|}~";
 // Password Options
 var pLength;
 var pNumbers = false;
@@ -33,7 +36,20 @@ console.log(pSpecialChars);
 
 // Function to generate password given user input
 function generatePassword() {
-  
+  var allowed = "";
+  if (pUpCase) {
+    allowed = allowed + upperCase;
+  }
+  if (pLowCase) {
+    allowed = allowed + lowerCase;
+  }
+  if (pNumbers) {
+    allowed = allowed + numbers;
+  }
+  if (pSpecialChars) {
+    allowed = allowed + specialCharacters;
+  }
+  return allowed;
 }
 
 
