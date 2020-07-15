@@ -5,35 +5,27 @@ Homework 03 - Password Generator
 ## Description
 This is a password generator that allows users to set custom parameters to generate a random password. The user can set the length of the password from 8 to 128 characters, choose to include upper case, lower case, numbers, and symbols. Every password is generated randomly including the selected parameters.
 
-![Password Generator Example](https://JonesElliot.github.io/03-Homework/Develop/Assets/Example.PNG)
-Format: ![Example of website](https://joneselliott.github.io/03-Homework/Develop/Assets/Example.PNG)
+![Password Generator Example](https://joneselliott.github.io/03-Homework/Develop/Assets/Example.PNG)
 
 
 ## Usage
 Click the **Set Parameters** button to get started. A prompt will appear requesting the desired length of the password. The password must be at least 8 characters long and no more than 128 cahracters long. A catch will request a new length if the number is out of range.
 
 ![Password Length Prompt](https://JonesElliot.github.io/03-Homework/Develop/Assets/LengthPrompt.PNG)
-Format: ![Example of password length prompt](https://joneselliott.github.io/03-Homework/Develop/Assets/LengthPrompt.PNG)
 
 ![Password Length Catch](https://JonesElliot.github.io/03-Homework/Develop/Assets/LengthCatch.PNG)
-Format: ![Example of password length catch](https://joneselliott.github.io/03-Homework/Develop/Assets/LengthCatch.PNG)
 
 A confirmation box will appear for upper case, lower case, numbers, and special characters (symbols) to be included in the password. If none of the following are selected, a catch will request at least one parameter be selected and repeat the confirmation pop-ups.
 
 ![Password Upper Confirm](https://JonesElliot.github.io/03-Homework/Develop/Assets/UpperConfirm.PNG)
-Format: ![Example of upper case confirm](https://joneselliott.github.io/03-Homework/Develop/Assets/UpperConfirm.PNG)
 
-![Password Lower Confirm](https://JonesElliot.github.io/03-Homework/Develop/Assets/LowerConfirm.PNG)
-Format: ![Example of lower case confirm](https://joneselliott.github.io/03-Homework/Develop/Assets/LowerConfirm.PNG)
+![Password Lower Confirm]https://JonesElliot.github.io/03-Homework/Develop/Assets/LowerConfirm.PNG)
 
 ![Password Numbers Confirm](https://JonesElliot.github.io/03-Homework/Develop/Assets/NumbersConfirm.PNG)
-Format: ![Example of Numbers confirm](https://joneselliott.github.io/03-Homework/Develop/Assets/NumbersConfirm.PNG)
 
-![Password Special Characters Confirm](https://JonesElliot.github.io/03-Homework/Develop/Assets/SpecialConfirm.PNG)
-Format: ![Example of special characters confirm](https://joneselliott.github.io/03-Homework/Develop/Assets/SpecialConfirm.PNG)
+![Password Special Characters Confirm](https://JonesElliot.github.io/03-Homework/Develop/Assets//SpecialConfirm.PNG)
 
 ![Password Parameters Catch](https://JonesElliot.github.io/03-Homework/Develop/Assets/UpperConfirm.PNG)
-Format: ![Example of parameters catch](https://joneselliott.github.io/03-Homework/Develop/Assets/ParametersCatch.PNG)
 
 Once password length and all parameters have been set, click **Generate Password** button to generate a password.
 
