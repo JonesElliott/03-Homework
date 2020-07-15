@@ -49,7 +49,18 @@ function generatePassword() {
   if (pSpecialChars) {
     allowed = allowed + specialCharacters;
   }
-  return allowed;
+  console.log(allowed); // Sanity Check
+
+  var password = "";
+  var length = parseInt(pLength);
+  
+  for (i = 0; i < length; i++) {
+    var random = Math.floor(Math.random() * allowed.length);
+    password += allowed[random];
+  }
+  return password;
+
+
 }
 
 
