@@ -18,28 +18,33 @@ var pSpecialChars = false;
 
 // Prompt user for password length
 do {
-  pLength = prompt("Enter desired password length (Min: 8, Max: 128");
+  pLength = prompt("Enter desired password length (Min: 8, Max: 128)");
+  // Alert message when given length is out of range
+  if (pLength < 8 || pLength > 128) {
+    alert("Please eneter a password length within range.")
+  }
 }
-// Only allows password length within range
+// Repeat above if given password length is out of range
 while (pLength < 8 || pLength > 128);
-console.log(pLength); // Sanity Check
+console.log("Password Length: " + pLength); // Sanity Check
 
+// Get desired parameters
 do {
   // Will the password include upper case?
   pUpCase = confirm("Do you want upper case characters in the password?");
-  console.log(pUpCase); // Sanity Check
+  console.log("Upper Case: " + pUpCase); // Sanity Check
 
   // Will the password include lower case>
   pLowCase = confirm("Do you want lower case characters in the password?");
-  console.log(pLowCase); // Sanity Check
+  console.log("Lower Case:" + pLowCase); // Sanity Check
 
   // Will the password include numbers?
   pNumbers = confirm("Do you want numbers in the password?");
-  console.log(pNumbers); // Sanity Check
+  console.log("Numbers: " + pNumbers); // Sanity Check
 
   // Will the password include special characters?
   pSpecialChars = confirm("Do you want special characters in the password?");
-  console.log(pSpecialChars);
+  console.log("Special Characters: " + pSpecialChars);
 
   if (!pUpCase && !pLowCase && !pNumbers && !pSpecialChars) {
     alert("Please select password paramaters to continue");
@@ -51,6 +56,7 @@ while (!pUpCase && !pLowCase && !pNumbers && !pSpecialChars);
 // Function to generate password given user input
 function generatePassword() {
   var allowed = "";
+  
   // Add allowed paramaters to password generator
   if (pUpCase) {
     allowed = allowed + upperCase;
@@ -64,7 +70,7 @@ function generatePassword() {
   if (pSpecialChars) {
     allowed = allowed + specialCharacters;
   }
-  console.log(allowed); // Sanity Check
+  console.log("Parameters Allowed: " + allowed); // Sanity Check
 
   var password = "";
   // Convert user given password length to an integer
