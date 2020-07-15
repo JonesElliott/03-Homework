@@ -17,6 +17,7 @@ var pLowCase = false;
 var pNumbers = false;
 var pSpecialChars = false;
 
+// Function to request password parameters from user
 function getParameters() {
   // Prompt user for password length
   do {
@@ -103,4 +104,5 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+// Add event listener to parameters button
 parametersBtn.addEventListener("click", getParameters);
