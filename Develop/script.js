@@ -1,7 +1,17 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+// Declaring Variables
+// Special characters
 var specialCharacters = ['!', '@', '#', '$', '%', '&', '*', '(', ')', '+', '-', '/', ':', ';', '<', '=', '>', '?', '[', '/', ']', '^', '_', '`', '{', '}', '|', '~'];
+// Password length
+var pLength;
+
+do {
+  pLength = prompt("Enter desired password length (Min: 8, Max: 128");
+}
+while (pLength < 8 || pLength > 128);
+console.log(pLength);
 
 
 function generatePassword() {
