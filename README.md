@@ -19,7 +19,7 @@ A confirmation box will appear for upper case, lower case, numbers, and special 
 
 ![Password Upper Confirm](https://JonesElliot.github.io/03-Homework/Develop/Assets/UpperConfirm.PNG)
 
-![Password Lower Confirm]https://JonesElliot.github.io/03-Homework/Develop/Assets/LowerConfirm.PNG)
+![Password Lower Confirm](https://JonesElliot.github.io/03-Homework/Develop/Assets/LowerConfirm.PNG)
 
 ![Password Numbers Confirm](https://JonesElliot.github.io/03-Homework/Develop/Assets/NumbersConfirm.PNG)
 
