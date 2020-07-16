@@ -22,6 +22,10 @@ function getParameters() {
   // Prompt user for password length
   do {
     pLength = prompt("Enter desired password length (Min: 8, Max: 128)");
+    // If user selects cancel, close out of function
+    if (pLength === null) {
+      return;
+    }
     // Alert message when given length is out of range
     if (pLength < 8 || pLength > 128) {
       alert("Please eneter a password length within range.")
